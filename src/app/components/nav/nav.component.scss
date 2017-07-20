@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+// Variables
+$primary: #003580;
+$secondary: #00acf0;
+$text-color: #7c90a6;
+$white: #FFFFFF;
+$darker: #323241;
+$background: #e5e9ed;
+
+.nav-wrapper {
+	.navbar-default {
+		background-color: $secondary;
+		margin: 0;
+		padding: 0;
+		border: none;
+		border-radius: 0;
+		.navbar-header {
+			.navbar-brand {
+				color: $white;
+				font-weight: 700;
+				font-size: 1.2em;
+          img {
+            width: 150px;
+          }
+			}
+		}
+		.navbar-nav {
+      li {
+        a {
+            color: $white;
+            font-size: 0.9em;
+        }
+      }
+		}
+  }
+}
+
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}

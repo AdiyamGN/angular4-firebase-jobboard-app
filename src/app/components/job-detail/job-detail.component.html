@@ -1,0 +1,44 @@
+<div id="listing-detail-hero">
+  <div class="container">
+      
+  </div>
+</div>
+
+<div class="job-details">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-lg-12 job-detail">
+        <div class="info">
+          <span class="job-title">{{job.title}}</span>
+          <span class="job-info"><span class="location"><i class="fa fa-building" aria-hidden="true"></i>{{job.company}}</span><span class="company"><i class="fa fa-map-marker" aria-hidden="true"></i>{{job.location}}</span><span class="salary"><i class="fa fa-usd" aria-hidden="true"></i>{{job.salary}}</span></span>
+        </div>
+        <div class="hero-buttons cf">
+            <a href="#" class="btn btn-success">Apply Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container">
+        <div class="col-md-12 col-sm-12 col-lg-12 detail">
+          <p>{{job.intro}}</p>
+          <h3 class="title">Requirements:</h3>
+          <p>{{job.requirments.introduction}}</p>
+          <ul>
+            <li *ngFor="let requirment of requirments">{{ requirment.desc }}</li>
+          </ul>
+          <h3 class="title">What You Will Be Doing</h3>
+          <p>{{job.doings.introduction}}</p>
+          <ul>
+            <li *ngFor="let doing of doings">{{ doing.desc }}</li>
+          </ul>
+          <h3 class="title">What's In It for You</h3>
+          <p>{{job.benefits.introduction}}</p>
+          <ul>
+            <li *ngFor="let benefit of benefits">{{ benefit.desc }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

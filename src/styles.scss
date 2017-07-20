@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+// Variables
+$primary: #003580;
+$secondary: #00acf0;
+$text-color: #7c90a6;
+$white: #FFFFFF;
+$darker: #323241;
+$background: #e5e9ed;
+
+// General Styles
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.7;
+	background: $white;
+	color: $text-color;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+}
+
+.btn {
+	padding: 0.9rem 2rem;
+	border-radius: 0.2em;
+	color: #FFFFFF;
+	font-weight: 400;
+	font-size: 1.3rem;
+	white-space: nowrap;
+	border-style: solid;
+	border-width: 1px;
+	vertical-align: middle;
+	position: relative;
+	user-select: none;
+	transition: all .3s ease-in-out;
+	letter-spacing: .03em;
+}

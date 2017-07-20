@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+// Variables
+$primary: #003580;
+$secondary: #00acf0;
+$text-color: #7c90a6;
+$white: #FFFFFF;
+$darker: #323241;
+$background: #e5e9ed;
+
+.breaker {
+	border: .2em solid;
+	text-align: left;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	width: 16.66667%;
+	color: $secondary;
+	display: inline-block;
+  text-align: left;
+
+}
+
+.breaker-white {
+	border: .2em solid;
+	text-align: left;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	width: 16.66667%;
+	color: $white;
+	display: inline-block;
+  text-align: left;
+}
+
+
+// hero style
+#hero {
+		margin: 0;
+		height: 80vh;
+		background-image: url(../../../assets/images/hero.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		overflow: hidden;
+   .title {
+    	color: $darker;
+  		font-size: 3.6em;
+  		line-height: 1.25em;
+  		letter-spacing: 0.215rem;
+			padding-top: 5rem;
+  		font-weight: 700;
+  		text-shadow: 1px 1px 20px rgba(0,0,0,0.1);
+    	.highlight {
+  					color: $secondary;
+  			}
+    }
+			.sub-title {
+			font-size: 1.5em !important;
+			line-height: 3.5rem !important;
+			letter-spacing: 0.03em;
+			color: $darker;
+			font-weight: 400 !important;
+		}
+		.hero-buttons {
+			margin-top: 2.5em !important;
+			display: inline-block;
+			position: relative;
+			vertical-align: top;
+			width: 100%;
+			.btn-success {
+				background-color: $secondary;
+				border-color: $secondary;
+				margin-right: 1rem;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				display: inline-block;
+				transition: all .3s ease-in-out;
+				&:hover {
+					background-color: $primary;
+					border-color: $primary;
+					color: #FFFFFF;
+				}
+			}
+			.btn-primary {
+				background-color: #444454;
+				border-color: #444454;
+				display: inline-block;
+				transition: all .3s ease-in-out;
+				&:hover {
+					background-color: #73737f;
+					border-color: #73737f;
+					color: #FFFFFF;
+				}
+			}
+	}
+}
+
+/*feature-wrapper*/
+
+.feature-wrapper{
+		margin: 5em 0;
+	
+	.feature-1 {
+		font-weight: 700 !important;
+		font-size: 4rem;
+		color: $darker;
+		.highlight {
+			position: relative;
+			font-size: 1.5em;;
+			color: $secondary;		
+		}
+	}
+	.feature-1-desc {
+		padding-top: 2em !important;
+		line-height: 1.3em !important;
+		font-size: 1.5rem;
+		width: 90% !important;
+		color: $darker;
+		font-weight: 400;
+  	text-align: left;	
+		letter-spacing: 0.03em;
+	}
+
+	.sider {
+		overflow: hidden;
+	}
+
+	.red-light {
+		border-color: $secondary;
+   	border-style: solid;
+   	border-width: 0;
+		padding-bottom: 4em !important;
+	}
+
+	.tag-line {
+		padding-bottom: 0.5em;
+		font-weight: 700 !important;
+		font-size: 2.2rem;
+		color: $darker;
+  	text-align: left;
+	}
+
+	.tag-line-desc {
+		font-weight: 300 !important;
+		font-size: 1.5rem;
+		line-height: 1.2em;
+		color: $darker;
+   	text-align: left;
+		 letter-spacing: 0.03em;
+	}
+	.horizontal-breaker {
+		padding: 0;
+		margin: 0;
+		display: block;
+		height: 80px;
+		border-left: .2rem solid $secondary;
+	}
+}
+
+/*Roles Wrapper*/
+
+.roles-wrapper {
+		margin: 5em 0 0;
+		background-image: url(../../../assets/images/call-action.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	.roles {
+		background: $secondary; 
+		color: #FFF; 
+		padding: 3em 2em;
+		.roles-header {
+			font-weight: 700 !important;
+			width: 60%;
+			padding-bottom: 1em !important;
+			font-size: 4rem;
+		}
+		.roles-text {
+			font-weight: 500 !important;
+			padding-bottom: 2rem !important;
+			font-size: 1.1em;
+			letter-spacing: 0.03em;
+		}
+		.btn-white {
+			background-color: none;
+			border-color: $white;
+	   	transition: all .3s ease-in-out;
+	   &:hover {
+	    	background-color: $white;
+  			border-color: $white;
+  			color: $secondary;
+	   }
+		}
+	}
+}
+
+/*jobs-wrapper*/
+.jobs-wrapper {
+	background: $white;
+	margin: 0 auto;
+	padding-top: 3.5em;
+	text-align: center;
+	.jobs-header {
+		font-size: 2em !important;
+		color: $darker;
+		font-weight: 700 !important;
+		line-height: 1.6em;
+	}
+	.jobs-subheader {
+		color: $darker;
+		font-size: 1.5em;
+		font-weight: 400;
+		text-align: center;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+		padding-bottom: 3.5em;
+
+	}
+	.companies {
+		margin-bottom: 1em;
+		img {
+			width: 50%;
+		}
+	}
+}
+
+// Media Queries For Mobile Devices
+
+@media only screen and (min-device-width: 275px) and (max-device-width: 667px) {
+	#hero {
+		padding-bottom: 5em;
+		.title {
+			padding-top: 2rem;
+			font-size: 3rem;
+		}
+		.sub-title {
+			font-size: 2.4rem !important;
+			line-height: 3.5rem !important;
+		}
+		.hero-buttons {
+			display: inline-block !important;
+			margin-top: 3rem !important;
+			margin-bottom: 3rem;
+			width: 100%;
+			vertical-align: top;
+			.btn-success {
+				margin-right: 1rem;
+				padding: 1rem;
+			}
+			.btn-primary {
+				padding: 1rem;
+			}
+		}
+	}
+
+	.feature-wrapper {
+		margin: 3rem 0;
+		padding-left: 2rem;
+		.feature-1 {
+			font-size: 2.85rem;
+			.hightlight {
+				position: relative;
+				top: none !important;
+				font-size: 1.5em;
+			}
+		}
+		.feature-1-desc {
+			padding-top: 1rem !important;
+			line-height: 1.3em !important;
+			font-size: 1.2em;
+			width: 100% !important;
+			line-height: 2.5rem !important;
+			font-size: 1.55rem;
+		}
+		.tag-line {
+			font-size: 1.8rem !important;
+		}
+		.tag-line-desc {
+			font-size: 1.4rem !important;
+			line-height: 3rem;
+			font-weight: 300 !important;
+			font-weight: 500 !important;
+		}
+		.horizontal-breaker {
+			display: none;
+		}
+		
+	}
+	.roles-wrapper {
+		margin: 3em 0 2em;
+		.roles {
+			padding: 2em 2em 3em;
+			padding-left: 4rem;
+
+			.roles-header {
+				font-size: 3rem;
+			}
+			.roles-text {
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	.jobs-wrapper {
+		padding-top:  0.5rem !important;
+		margin-bottom: 5em;
+		margin-left: 2rem;
+		.jobs-header {
+			font-size: 2.5rem !important;
+			line-height: 4rem;
+			text-align: left;
+		}
+		.jobs-subheader {
+			font-size: 1.8rem !important;
+			text-align: left;
+			line-height: 3rem;
+			padding-bottom: 2rem;
+			letter-spacing: 0.03em;
+		}
+		.companies {
+			img {
+				width: 75%;
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+<div class="listings">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-lg-12 listing" *ngFor="let job of jobs">
+        <div class="info">
+          <span class="job-title"><a [routerLink]="['/job-detail/'+job.$key]">{{job.title}}</a></span>
+          <span class="job-info"><span class="location"><i class="fa fa-building" aria-hidden="true"></i>{{job.company}}</span><span class="company"><i class="fa fa-map-marker" aria-hidden="true"></i>{{job.location}}</span><span class="salary"><i class="fa fa-usd" aria-hidden="true"></i>{{job.salary}}</span></span>
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>

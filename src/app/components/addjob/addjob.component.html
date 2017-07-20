@@ -1,0 +1,34 @@
+<div>
+  <div class="form-container">
+    <div class="row columns">
+      <form (submit)="onAddSubmit()">
+        <div class="form-container">
+          <div class="row columns">
+            <h1>Add Job</h1>
+            <label>Title
+              <input type="text" [(ngModel)]="title" name="title" required>
+            </label>
+
+            <label>Company
+              <input type="text" [(ngModel)]="company" name="company" required>
+            </label>
+
+            <label>Location
+              <input type="text" [(ngModel)]="location" name="location" required>
+            </label>
+
+            <label>Salary
+              <input type="text" [(ngModel)]="salary" name="salary" required>
+            </label>
+            
+            <input type="submit" class="button expanded" value="Submit">
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+

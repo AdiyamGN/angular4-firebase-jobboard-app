@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+// Variables
+$primary: #34314c;
+$secondary: #00acf0;
+$text-color: #7c90a6;
+$white: #FFFFFF;
+$darker: #323241;
+$background: #e5e9ed;
+$grey: #9592ad;
+$hightlight: #feba02;
+
+// Listings Styles
+
+.listings {
+  padding: 5rem 0;
+  position: relative;
+  background: $background;
+  .listing {
+    background: $white;
+    // border: 1px solid $secondary;
+    border-radius: 0.3em;
+    padding: 1em;
+    margin-bottom: 1em;
+    position: relative;
+    z-index: 1;
+    display: table;
+    width: 100%;
+
+
+    .info, .job-type {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 0.9em;
+      color: $grey;
+    }
+    .info {
+      line-height: 1.25;
+      padding-left: 25px;
+      width: 100%;
+      .job-title {
+        font-weight: 700;
+        font-size: 1.5em;
+        color: $secondary;
+        display: inline-block;
+        padding-bottom: 1rem;
+      }
+      .job-info {
+        color: $grey;
+        display: block;
+        font-size: 1em;
+        .company, .location, .salary {
+          display: inline-block;
+          width: 33.33%;
+          @media only screen and (max-width: 667px) {
+            width: 100%;
+            margin-bottom: 1rem;
+          }
+          i {
+             color: $white;
+             font-size: 1rem;
+             width: 25px;
+             height: 25px;
+             line-height: 25px;
+             background: $background;
+             border-radius: 100%;
+             text-align: center;
+             margin-right: 1rem;
+          }
+
+        }
+      }
+      .job-description  {
+        color: $grey;
+        display: block;
+        font-size: 0.9em;
+        display: inline-block;
+        padding-top: 3rem;
+        width: 80%;
+        line-height: 1.5;
+      }
+    }
+    transition: all .3s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.1)
+    }
+  }
+  .date {
+    display: inline-block;
+    padding: 1em 0;
+    width: 100px;
+    background: $white;
+    border: 0.25px solid $hightlight;
+    border-radius: 3em;
+    font-weight: 700;
+    font-size: .75em;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    margin: 0.25em 0 1.75em 0;
+  }
+}
